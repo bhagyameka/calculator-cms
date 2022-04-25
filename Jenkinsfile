@@ -1,2 +1,2 @@
 @Library('cmsdevopscorelib')_
-checkOutCode "${branch_name}"
+checkOutCode.fromgithub "${branch_name}"
