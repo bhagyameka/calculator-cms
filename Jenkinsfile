@@ -1,5 +1,5 @@
 @Library('cmsdevopscorelib')_
-if ($buildordeploy == 'build'){ 
+if ("$buildordeploy" == 'build'){ 
 build "$branch_name"
 }
 else
