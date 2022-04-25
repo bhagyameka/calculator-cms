@@ -1,9 +1,8 @@
-if ($buildordeploy == 'build'){
-  @Library('cmsdevopscorelib')_
+@Library('cmsdevopscorelib')_
+if ($buildordeploy == 'build'){ 
 build "$branch_name"
 }
 else
 {
-  @Library('cmsdevopscorelib')_
-deploy "$branch_name"
+ deploy "$branch_name"
 }
