@@ -10,7 +10,6 @@ else
  else
  {
  echo "__________deployment to $branch_name ENV is not allowed____________"
-  exit(1)
-  }
+   }
  
 }
