@@ -5,7 +5,7 @@ if ("$buildordeploy" == 'build'){
  }
  else
  {
- echo "__________Build not allowed on $branch_name____________"
+ echo "__________Build not allowed on $branch_name ____________"
    }
 }
 else
