@@ -9,8 +9,8 @@ else
  }
  else
  {
- echo "deployment to $branch_name ENV is not allowed"
-  sh 'exit 1'
+ echo "__________deployment to $branch_name ENV is not allowed____________"
+  //sh 'exit 1'
  }
  
 }
