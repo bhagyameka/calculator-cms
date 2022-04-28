@@ -1,6 +1,12 @@
 @Library('cmsdevopscorelib')_
-if ("$buildordeploy" == 'build'){ 
-build "$branch_name"
+if ("$buildordeploy" == 'build'){
+ if ("$branch_name" == 'develop'){ 
+ build "$branch_name"
+ }
+ else
+ {
+ echo "__________Build not allowed on $branch_name____________"
+   }
 }
 else
 {
