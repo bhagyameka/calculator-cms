@@ -87,7 +87,8 @@ stage ('Upload to Jfrog') {
      }
 		}
 }
-else {
+else 
+{
  pipeline {
 	environment {
 			BN = "${branch_name}"
@@ -99,7 +100,7 @@ else {
 					echo "You have chosen branch:"
 	                                println "$BN"
 					script{
-											if ("$BN" == 'develop'){
+					 if ("$BN" == 'develop'){
 				deployApp.downloadFromJfrog()
 						}
 						else{
