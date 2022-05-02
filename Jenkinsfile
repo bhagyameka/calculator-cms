@@ -1,4 +1,4 @@
-@Library('cmsdevopscorelib')_
+//@Library('cmsdevopscorelib')_
 /* if ("$buildordeploy" == 'build'){
  if ("$branch_name" == 'develop'){ 
  build "$branch_name"
@@ -19,16 +19,17 @@ else
    }
  
 } */
-/* @Library('cmsdevopscorelib')_
+@Library('cmsdevopscorelib')_
 if ("$buildordeploy" == 'build'){
   build "$branch_name"
  }
  else
  {
   deploy "$branch_name"
- } */
+ } 
 
 //if ("$buildordeploy" == 'build'){
+/*
 pipeline {
 	environment {
 			BN = "${branch_name}"
@@ -86,7 +87,7 @@ stage ('Upload to Jfrog') {
      }
      }
 		}
-}
+}*/
 //}
 /* else 
 {
