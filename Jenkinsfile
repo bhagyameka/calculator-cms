@@ -28,7 +28,7 @@ if ("$buildordeploy" == 'build'){
   deploy "$branch_name"
  } */
 
-if ("$buildordeploy" == 'build'){
+//if ("$buildordeploy" == 'build'){
 pipeline {
 	environment {
 			BN = "${branch_name}"
@@ -87,8 +87,8 @@ stage ('Upload to Jfrog') {
      }
 		}
 }
-}
-else 
+//}
+/* else 
 {
  pipeline {
 	environment {
@@ -125,4 +125,4 @@ else
 		
 	}
 
-}
+}*/
