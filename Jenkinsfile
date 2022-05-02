@@ -87,6 +87,7 @@ stage ('Upload to Jfrog') {
      }
 		}
 }
+}
 else 
 {
  pipeline {
@@ -124,5 +125,4 @@ else
 		
 	}
 
-}
-}
+
