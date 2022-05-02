@@ -6,7 +6,6 @@ if ("$buildordeploy" == 'build'){
  else
  {
  echo "__________Build not allowed on $branch_name ____________"
- exit 1
    }
 }
 else
@@ -17,7 +16,6 @@ else
  else
  {
  echo "__________deployment to $branch_name ENV is not allowed____________"
- exit 1
    }
  
 }
