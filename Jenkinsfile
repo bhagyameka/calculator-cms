@@ -40,7 +40,7 @@ pipeline {
 					echo "You have chosen branch:"
 	                                println "$BN"
 					script{
-											if ("$BN" == 'develop'){
+											if ("$BN" != 'sit' || "$BN" != 'uat' || "$BN" != 'master' ){
 					buildApp.SourcecodeCheckout("$BN")
 						}
 						else{
