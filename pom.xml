@@ -22,7 +22,7 @@
 </scm>
 	<build> 
 		<!--suppress UnresolvedMavenProperty -->
-		<finalName>${project.artifactId}-1.${aip.version.full}</finalName>
+		<finalName>${project.artifactId}-${aip.version.full}-snapshot</finalName>
 
 	<plugins>
 	<plugin>
