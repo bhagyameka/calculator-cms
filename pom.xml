@@ -16,6 +16,10 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<scm>
+    <!-- Replace the connection below with your project connection -->
+    <connection>scm:git:https://github.com/bhagyameka/calculator-cms.git</connection>
+</scm>
 	<build> 
 		<finalName>${project.artifactId}-1.${buildNumber}.${myBuildDate}</finalName>
 
