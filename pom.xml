@@ -17,13 +17,13 @@
 		</dependency>
 	</dependencies>
 	<build> 
-		<finalName>${project.artifactId}-1.$\{buildnumber}.$\{myBuildDate}</finalName>
+		<finalName>${project.artifactId}-1.${buildNumber}.${myBuildDate}</finalName>
         <pluginManagement>
 	<plugins>
 	<plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>buildnumber-maven-plugin</artifactId>
-            <version>1.4</version>
+            <version>3.0.0</version>
               <configuration>
             <revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
             </configuration>
