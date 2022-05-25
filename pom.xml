@@ -21,50 +21,27 @@
     <connection>scm:git:https://github.com/bhagyameka/calculator-cms.git</connection>
 </scm>
 	<build> 
-		<finalName>${project.artifactId}-1.${myBuildDate}.${buildNumber}</finalName>
+		<!--<finalName>${project.artifactId}-1.${myBuildDate}.${buildNumber}</finalName>-->
 
 	<plugins>
 	<plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>buildnumber-maven-plugin</artifactId>
-            <version>3.0.0</version>
-              
-          
-            <executions>
-                <execution>
-                    <id>buildnumber</id>
-                    <phase>validate</phase>
-                    <goals>
-                        <goal>create</goal>
-                    </goals>
-                    <configuration>
-                      <revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
-		      
-                        <format>{0,number}</format>
-                        <items>
-                            <item>buildNumber</item>
-                        </items>
-                        <doCheck>false</doCheck>
-                        <doUpdate>false</doUpdate>
-                        <!--  <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>-->
-                   
-            </configuration>
-                </execution>
-              <execution>
-            <id>create-timestamp-id</id>
-            <phase>validate</phase>
-            <goals>
-                <goal>create-timestamp</goal>
-            </goals>
-            <configuration>
-                <timestampFormat>yyMMdd</timestampFormat>
-                <timestampPropertyName>myBuildDate</timestampPropertyName>
-                <!-- formats the timestamp all together like 2016-04-04 14:17:05.123 and puts 
-                    it in the ${myBuildDate} buildProperty -->
-            </configuration>
-        </execution>
-            </executions>
-        </plugin>
+		<groupId>org.codehaus.mojo</groupId> 
+		<artifactId>autoincrement-versions-maven-plugin</artifactId>
+		<version>2.0-SNAPSHOT</version> 
+		<executions>
+			<execution>
+				<id>update-pom-versions</id>
+				<goals>
+					<goal>increment</goal> 
+					<goal>commit</goal>
+				</goals>
+				<phase>compile</phase>
+				<configuration>
+					<autoIncrementVersion>true</autoIncrementVersion> 
+				</configuration>
+			</execution> 
+		</executions>
+		</plugin>
 	</plugins>
 		
 		</build> 
