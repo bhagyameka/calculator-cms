@@ -17,7 +17,7 @@
 		</dependency>
 	</dependencies>
 	<build> 
-		<finalName>${project.artifactId}-1.${buildNumber}.${myBuildDate}</finalName>
+		<finalName>${project.artifactId}-1.${buildnumber}.${myBuildDate}</finalName>
         <pluginManagement>
 	<plugins>
 	<plugin>
