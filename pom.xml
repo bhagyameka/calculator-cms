@@ -44,5 +44,15 @@
 		</plugin>
 	</plugins>
 		
-		</build> 
+		</build>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>autoincrement-versions-maven-plugin</id> 
+			<name>autoincrement-versions-maven-plugin</name>
+			<url>http://autoincrement-versions-maven-plugin.googlecode.com/svn/repo</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
