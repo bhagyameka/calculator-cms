@@ -26,6 +26,15 @@
             <version>3.0.0</version>
               <configuration>
             <revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
+		      
+                        <format>{0,number}</format>
+                        <items>
+                            <item>buildNumber</item>
+                        </items>
+                        <doCheck>false</doCheck>
+                        <doUpdate>false</doUpdate>
+                        <!--  <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>-->
+                   
             </configuration>
             <executions>
                 <execution>
@@ -34,15 +43,7 @@
                     <goals>
                         <goal>create</goal>
                     </goals>
-                    <configuration>
-                        <format>{0,number}</format>
-                        <items>
-                            <item>buildNumber</item>
-                        </items>
-                        <doCheck>false</doCheck>
-                        <doUpdate>false</doUpdate>
-                        <!--  <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>-->
-                    </configuration>
+                    
                 </execution>
               <execution>
             <id>create-timestamp-id</id>
