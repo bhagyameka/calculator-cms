@@ -18,7 +18,8 @@
 	</dependencies>
 	<build> 
 		<finalName>${project.artifactId}-1.${buildNumber}</finalName>
-        <plugins>
+        <pluginManagement>
+	<plugins>
 	<plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>buildnumber-maven-plugin</artifactId>
@@ -58,6 +59,7 @@
         </execution>
             </executions>
         </plugin>
-	</plugins>	
+	</plugins>
+		</pluginManagement>
 		</build> 
 </project>
