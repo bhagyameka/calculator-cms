@@ -18,7 +18,7 @@
 	</dependencies>
 	<build> 
 		<finalName>${project.artifactId}-1.${buildNumber}.${myBuildDate}</finalName>
-        <pluginManagement>
+
 	<plugins>
 	<plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -61,6 +61,6 @@
             </executions>
         </plugin>
 	</plugins>
-		</pluginManagement>
+		
 		</build> 
 </project>
