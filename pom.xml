@@ -29,7 +29,16 @@
             <artifactId>buildnumber-maven-plugin</artifactId>
             <version>3.0.0</version>
               <configuration>
-            <revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
+          
+            <executions>
+                <execution>
+                    <id>buildnumber</id>
+                    <phase>validate</phase>
+                    <goals>
+                        <goal>create</goal>
+                    </goals>
+                    <configuration>
+                      <revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
 		      
                         <format>{0,number}</format>
                         <items>
@@ -40,14 +49,6 @@
                         <!--  <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>-->
                    
             </configuration>
-            <executions>
-                <execution>
-                    <id>buildnumber</id>
-                    <phase>validate</phase>
-                    <goals>
-                        <goal>create</goal>
-                    </goals>
-                    
                 </execution>
               <execution>
             <id>create-timestamp-id</id>
