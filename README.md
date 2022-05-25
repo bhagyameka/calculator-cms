@@ -1,5 +1,6 @@
 # jenkins-junit-maven-example
 This is the maven basic project with Junit test cases for Jenkins integration.
+auto-increment-plugin
 This plugin works by generating a properties file saving three values:
 
 Major: Major version number X.0.0
