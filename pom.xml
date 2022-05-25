@@ -21,7 +21,7 @@
     <connection>scm:git:https://github.com/bhagyameka/calculator-cms.git</connection>
 </scm>
 	<build> 
-		<finalName>${project.artifactId}-1.${buildNumber}.${myBuildDate}</finalName>
+		<finalName>${project.artifactId}-1.${myBuildDate}.${buildNumber}</finalName>
 
 	<plugins>
 	<plugin>
@@ -56,7 +56,7 @@
                 <goal>create-timestamp</goal>
             </goals>
             <configuration>
-                <timestampFormat>yyyy-MM-dd</timestampFormat>
+                <timestampFormat>yyMMdd</timestampFormat>
                 <timestampPropertyName>myBuildDate</timestampPropertyName>
                 <!-- formats the timestamp all together like 2016-04-04 14:17:05.123 and puts 
                     it in the ${myBuildDate} buildProperty -->
