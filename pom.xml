@@ -22,7 +22,7 @@
     <connection>scm:git:https://github.com/bhagyameka/calculator-cms.git</connection>
 </scm>
 	<build> 
-		<!--<finalName>${project.artifactId}-${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</finalName>-->
+		<finalName>${project.artifactId}-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}</finalName>
 
 	<plugins>
 	<plugin>
