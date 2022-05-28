@@ -108,7 +108,7 @@
                 </goals>
                 <phase>validate</phase>
                 <configuration>
-                  <newVersion>${parsedVersion.nextMajorVersion}.0.0</newVersion>
+                  <newVersion>${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</newVersion>
                 </configuration>
               </execution>
             </executions>
