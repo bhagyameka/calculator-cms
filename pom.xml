@@ -5,6 +5,10 @@
 	<artifactId>junitmavenexample</artifactId>
 	<packaging>jar</packaging>
 	<version>1.${myBuildDate}.${buildNumber}-SNAPSHOT</version>
+	<properties>
+    <!-- Printable version name -->
+            <versionName>${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</versionName>
+         </properties>
 	<name>junitmavenexample</name>
 	<url>http://maven.apache.org</url>
 	
@@ -21,7 +25,7 @@
     <connection>scm:git:https://github.com/bhagyameka/calculator-cms.git</connection>
 </scm>
 	<build> 
-		<finalName>${project.artifactId}-${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</finalName>
+		<!--<finalName>${project.artifactId}-${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</finalName>-->
 
 	<plugins>
 	<plugin>
