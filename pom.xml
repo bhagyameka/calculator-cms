@@ -23,7 +23,7 @@
 </scm>
 	<build> 
 		<finalName>${project.artifactId}-${parsedVersion.nextMajorVersion}.${myBuildDate}.${buildNumber}</finalName>
-         <pluginManagement>
+         
 	<plugins>
 	<plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -86,7 +86,7 @@
   </plugin>
 		
 	</plugins>
-		</pluginManagement>
+		
 		</build> 
 	<profiles>
 		<profile>
