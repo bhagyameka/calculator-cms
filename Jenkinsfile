@@ -21,7 +21,7 @@ else
 } */
 @Library('cmsdevopscorelib')_
 if ("$buildordeploy" == 'build'){
-  buildtrycatch "$branch_name"
+  buildtrycatch "$branch_name","$agent"
  }
  else
  {
